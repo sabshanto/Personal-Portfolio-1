@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabbir Ahmed - Frontend & UI/UX</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+    <div class="container header-content">
+        <div class="logo">
+            <span style="color: var(--primary); font-weight: bold; font-size: 1.8rem;">&lt;/&gt;</span> 
+            <span>Sabbir</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <a href="resume.pdf" download="Sabbir_Ahmed_CV" class="btn btn-primary">Download CV</a>
+    </div>
+</header>
+
+    <div class="container main-content">
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <h3>Hi I am</h3>
+                <h1>Md. Sabbir Ahmed</h1>
+                <h2>Frontend Dev & <br> <span>UI/UX Designer</span></h2>
+                <p>Versatile creative professional specializing in frontend development, UI/UX design, and video editing. Adept at blending technical knowledge with creativity to deliver polished digital experiences.</p>
+                <a href="#contact" class="btn btn-primary">Hire Me</a>
+            </div>
+            <div class="hero-image">
+            <img src="images/Profile Picture.png" alt="Sabbir Ahmed">
+            <div class="bg-glow"></div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="about-img">
+            <img src="images/About me.jpg" alt="About Sabbir">
+            </div>
+            <div class="about-content">
+                <h2 class="section-title">About Me</h2>
+                <p>I am a Software Engineering student at Daffodil International University with a passion for digital storytelling. I have experience leading creative teams and building digital platforms using HTML, CSS, PHP, and MySQL.</p>
+                
+                <div class="skills">
+                    <div class="skill-item">
+                        <span class="skill-name">Frontend Dev (HTML/CSS/JS)</span>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">UI/UX Design (Figma)</span>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Graphic Design (Ps/Ai)</span>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 95%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Video Editing (Premiere/CapCut)</span>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <h2 class="section-title">Services</h2>
+            <p>Combining technical skills with creative design to build brands and digital products.</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Frontend Development</h3>
+                    <p>Building responsive websites using HTML, CSS, JavaScript, and PHP.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-pen-nib"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Creating user-friendly interfaces and prototypes using Figma.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-photo-video"></i>
+                    <h3>Video Editing</h3>
+                    <p>Producing dynamic promotional videos using Adobe Premiere Pro & CapCut.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-bezier-curve"></i>
+                    <h3>Graphic Design</h3>
+                    <p>Designing posters, banners, and brand identity assets.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2 class="section-title">My Projects</h2>
+            <p>A showcase of my technical and creative work.</p>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterProjects('all', this)">All</button>
+                <button class="filter-btn" onclick="filterProjects('web', this)">Web Dev</button>
+                <button class="filter-btn" onclick="filterProjects('creative', this)">Creative</button>
+            </div>
+
+            <div class="project-grid">
+                <div class="project-card" data-category="web">
+                    <div class="project-img-wrapper">
+                        <img src="images/Proctor Repository System.png" alt="Proctor Repository System">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-cat">Web Development</span>
+                        <div class="project-title">Proctor Repository System</div>
+                        <p style="font-size: 0.8rem; color: #777; margin-top: 5px;">Digital platform to manage student profiles and case reports.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="creative">
+                    <div class="project-img-wrapper">
+                        <img src="images/Codetrap Promo.png" alt="Video Editing">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-cat">Video Editing</span>
+                        <div class="project-title">Codetrap Promo Video</div>
+                        <p style="font-size: 0.8rem; color: #777; margin-top: 5px;">High-energy promo content for programming contest.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="creative">
+                    <div class="project-img-wrapper">
+                        <img src="images/DIUSEC.png" alt="Design">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-cat">Graphic Design</span>
+                        <div class="project-title">DIU Club Visual Identity</div>
+                        <p style="font-size: 0.8rem; color: #777; margin-top: 5px;">Event posters and banners for Software Engineering Club.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+            <h2 class="section-title">Testimonials</h2>
+            <p>Feedback from colleagues and project partners.</p>
+
+            <div class="testimonial-slider">
+                <div class="testimonial-slide">
+                    <img src="images/Club President.png" alt="Client" class="t-img" id="t-img">
+                    <div class="t-content">
+                        <p id="t-text">Sabbir is a versatile creative. His ability to handle both code and design made our project workflow incredibly smooth.</p>
+                        <div class="t-name" id="t-name">Club President</div>
+                        <div class="t-role" id="t-role">DIU Software Engineering Club</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dots">
+                <div class="dot active" onclick="showTestimonial(0)"></div>
+                <div class="dot" onclick="showTestimonial(1)"></div>
+                <div class="dot" onclick="showTestimonial(2)"></div>
+            </div>
+        </section>
+
+        <section id="contact" class="footer">
+            <div class="contact-cta">
+                <h2>Lets Design Together</h2>
+                <p>Have a project in mind? Reach out to me via email or social media.</p>
+                <div class="email-form">
+                    <input type="email" placeholder="Enter Your Email">
+                    <a href="mailto:sabbirshanto666@gmail.com" class="btn btn-primary">Contact Me</a>
+                </div>
+            </div>
+
+            <div class="logo footer-logo">
+                <span style="color: var(--primary); font-weight: bold; font-size: 1.5rem;">&lt;/&gt;</span>
+                <span>Sabbir</span>
+            </div>
+            
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://linkedin.com/in/sabbirahmedshanto"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/sabshanto"><i class="fab fa-github"></i></a>
+                <a href="mailto:sabbirshanto666@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </section>
+    </div>
+
+    <div class="copyright">
+        © 2025 <span style="font-weight: bold; color: #FD6F00;">Sabbir Ahmed Shanto</span>. All Rights Reserved.
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
